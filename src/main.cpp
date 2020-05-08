@@ -79,9 +79,11 @@ void loop() {
 //    Serial.println(" meters");
     
     Serial.print(h);
-    Serial.print("  ");
+    Serial.print(" ");
     Serial.print(t);
-    Serial.print("  ");
+    Serial.print(" ");
+    Serial.print(bmp.readAltitude());
+    Serial.print(" ");
     Serial.print(bmp.readPressure());
     Serial.println();
 
